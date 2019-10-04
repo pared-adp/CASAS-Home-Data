@@ -1,0 +1,58 @@
+WSU Smart Apartment 2010 Two Resident Testbed
+
+Description
+
+This dataset represents sensor events collected in the WSU smart apartment testbed during the 2009-2010 academic year.  The apartment housed two residents, R1 and R2, at this time and they performed their normal daily activities.
+
+File format
+
+The data file, called "data", is included in this release.  The file contains sensor events in which the start and end of various activities are annotated at the end of the corresponding sensor event lines.
+
+Sensor layouts
+
+The sensors can be categorized by:
+
+   Mxx:       motion sensor
+   Ixx:       item sensor for selected items in the kitchen
+   Dxx:       door sensor
+   AD1-A:     burner sensor
+   AD1-B:     hot water sensor
+   AD1-C:     cold water sensor
+   Txx:       temperature sensors
+   P001:      electricity usage
+
+The sensor layout of the apartment for the annotated data set is shown in the file sensorlayout.jpg.  The sensor layout of the apartment for the raw data set is shown in the file sensorlayout2.png.  The sensors are the same but some renumbering was done and the power usage was added.
+
+Activities
+
+Sensor events are annotated with the corresponding activity that was being performed, where possible.  The set of activities that are annotated are listed below. Here, a label beginning with "R1_" indicates that R1 was performing the activity and a label beginning with "R2_" indicates that R2 was performing the activity.
+
+   R1_Bathing
+   R1_Bed_Toilet_Transition
+   R1_Eating
+   R1_Enter_Home
+   R1_Housekeeping
+   R1_Leave_Home
+   R1_Meal_Preparation
+   R1_Personal_Hygiene
+   R1_Sleep
+   R1_Sleeping_Not_in_Bed
+   R1_Wandering_in_room
+   R1_Watch_TV
+   R1_Work
+   R2_Bathing
+   R2_Bed_Toilet_Transition
+   R2_Eating
+   R2_Enter_Home
+   R2_Leave_Home
+   R2_Meal_Preparation
+   R2_Personal_Hygiene
+   R2_Sleep
+   R2_Sleeping_Not_in_Bed
+   R2_Wandering_in_room
+   R2_Watch_TV
+   R2_Work
+
+All use of the data must cite the WSU CASAS smart home project.
+
+D. Cook and M. Schmitter-Edgecombe, Assessing the quality of activities in a smart environment.  Methods of Information in Medicine, 2009.
