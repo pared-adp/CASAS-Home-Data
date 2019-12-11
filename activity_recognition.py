@@ -6,7 +6,7 @@ from pathlib import Path
 import csv
 from datetime import datetime as time
 import numpy as np
-# import separate_rooms_usethis # for whatever reason, this file cant be found 
+# import separate_rooms_usethis # for whatever reason, this file cant be found
 
 start = time.now()
 data_path = "data/data.txt"
@@ -54,8 +54,6 @@ LABELS = [
 ]
 
 LABEL = 'ActivityEncoded'
-le = preprocessing.LabelEncoder()
-dataframe[LABEL] = le.fit_transform(dataframe['activity'].values.ravel())
 
 # Plots activity for each separated activity
 def plot_activity(activity, data):
