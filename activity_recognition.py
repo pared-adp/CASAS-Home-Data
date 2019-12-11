@@ -1,7 +1,10 @@
 """
 activity regonition
 """
-
+import inline as inline
+import matplotlib
+from matplotlib import pyplot as plt
+# %matplotlib inline #should be working but isnt...
 from pathlib import Path
 import csv
 from datetime import datetime as time
@@ -57,16 +60,16 @@ LABEL = 'ActivityEncoded'
 
 # Plots activity for each separated activity
 def plot_activity(activity, data):
-    fig, (ax0, ax1, ax2) = plt.subplots(nrows = 3,
-         figuresize = (15, 10),
-         sharex = True)
+    fig, (ax0, ax1, ax2) = plt.subplots(nrows=3,
+         figuresize=(15, 10),
+         sharex=True)
     plot_axis(ax0, data['timestamp'], data['x-axis'], 'X-Axis')
     plot_axis(ax1, data['timestamp'], data['y-axis'], 'Y-Axis')
     plot_axis(ax2, data['timestamp'], data['z-axis'], 'Z-Axis')
     plt.subplots_adjust(hspace = 0.2)
     fig.suptitle(activity)
-    plot.subplots_adjust(top = 0.90)
-    plot.show()
+    plt.subplots_adjust(top = 0.90)
+    plt.show()
 
 # this will plot the data on different axis
 def plot_axis(ax, x, y, title):
@@ -78,4 +81,12 @@ def plot_axis(ax, x, y, title):
     ax.grid(True)
 
 
-
+# Close files
+bedroom_blue_out.close()
+bedroom_purple_out.close()
+bathroom_brown_out.close()
+hallway_pink_out.close()
+hallway_orange_out.close()
+kitchen_yellow_out.close()
+livingroom_maroon_out.close()
+bedroom_red_out.close()
